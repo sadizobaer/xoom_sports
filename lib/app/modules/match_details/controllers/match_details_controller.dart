@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
-import '../views/components/info_page.dart';
-import '../views/components/stat_page.dart';
+import 'package:xoom_sports/app/modules/match_details/views/components/info_page.dart';
+import 'package:xoom_sports/app/modules/match_details/views/components/stat_page.dart';
 
 class MatchDetailsController extends GetxController {
   List<String> tabs = ['info', 'summery', 'stats', 'line-ups', 'table'];

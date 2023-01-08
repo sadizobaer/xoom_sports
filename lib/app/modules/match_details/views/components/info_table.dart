@@ -27,21 +27,28 @@ class InfoTable extends StatelessWidget {
               child: Text(
                 index.toString(),
                 style: Theme.of(context).textTheme.subtitle1?.copyWith(
-                    fontSize: 11.sp,
-                ),
+                      fontSize: 11.sp,
+                    ),
               ),
             ),
             Expanded(
               flex: 6,
               child: Row(
                 children: [
-                  SizedBox(height: 12.h, width: 24.w, child: Image.asset(AppImages.splash, fit: BoxFit.fill,),),
+                  SizedBox(
+                    height: 12.h,
+                    width: 24.w,
+                    child: Image.asset(
+                      AppImages.splash,
+                      fit: BoxFit.fill,
+                    ),
+                  ),
                   SizedBox(width: 4.w),
                   Text(
                     teamName,
                     style: Theme.of(context).textTheme.bodyText1?.copyWith(
-                      fontSize: 12.sp,
-                    ),
+                          fontSize: 12.sp,
+                        ),
                   ),
                 ],
               ),
@@ -52,8 +59,8 @@ class InfoTable extends StatelessWidget {
                 child: Text(
                   p.toString(),
                   style: Theme.of(context).textTheme.bodyText1?.copyWith(
-                    fontSize: 11.sp,
-                  ),
+                        fontSize: 11.sp,
+                      ),
                 ),
               ),
             ),
@@ -63,8 +70,8 @@ class InfoTable extends StatelessWidget {
                 child: Text(
                   gd.toString(),
                   style: Theme.of(context).textTheme.bodyText1?.copyWith(
-                      fontSize: 11.sp,
-                  ),
+                        fontSize: 11.sp,
+                      ),
                 ),
               ),
             ),
@@ -74,8 +81,8 @@ class InfoTable extends StatelessWidget {
                 child: Text(
                   pts.toString(),
                   style: Theme.of(context).textTheme.bodyText1?.copyWith(
-                      fontSize: 11.sp,
-                  ),
+                        fontSize: 11.sp,
+                      ),
                 ),
               ),
             ),

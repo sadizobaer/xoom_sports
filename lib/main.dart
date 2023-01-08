@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import 'package:get/get.dart';
 import 'package:xoom_sports/app/utilities/app_theme.dart';
-
 import 'app/routes/app_pages.dart';
-import 'app/utilities/intial_bindings.dart';
+import 'app/utilities/initial_bindings.dart';
 
 void main() {
   runApp(

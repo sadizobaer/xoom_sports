@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import '../modules/home/controllers/home_controller.dart';
+import 'package:xoom_sports/app/modules/home/controllers/home_controller.dart';
 import 'api_client.dart';
 
 class InitialBindings extends Bindings {

@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
-
-import '../../home/views/home_view.dart';
+import 'package:xoom_sports/app/modules/home/views/home_view.dart';
 
 class BottomNavController extends GetxController {
   static const List<Widget> pages = [

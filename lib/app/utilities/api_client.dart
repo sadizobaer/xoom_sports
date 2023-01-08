@@ -3,7 +3,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter_pretty_dio_logger/flutter_pretty_dio_logger.dart';
 import 'dart:developer';
 
-const String baseUrl = "https://dev.chondo.tech/api/";
+const String baseUrl = " ";
 
 class ApiClient {
   static final Dio dio = Dio();

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import '../../../../utilities/images.dart';
+import 'package:xoom_sports/app/utilities/images.dart';
 
 class InfoFixture extends StatelessWidget {
   const InfoFixture({Key? key}) : super(key: key);

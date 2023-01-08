@@ -4,8 +4,7 @@ import 'package:xoom_sports/app/modules/match_details/views/components/info_fixt
 import 'package:xoom_sports/app/modules/match_details/views/components/info_table.dart';
 import 'package:xoom_sports/app/utilities/colors.dart';
 import 'package:xoom_sports/app/utilities/images.dart';
-
-import '../../../../utilities/custom_clip_path.dart';
+import 'package:xoom_sports/app/utilities/custom_clip_path.dart';
 
 class InfoPage extends StatelessWidget {
   const InfoPage({Key? key}) : super(key: key);
@@ -51,7 +50,6 @@ class InfoPage extends StatelessWidget {
         ClipPath(
           clipper: CustomClipPath(),
           child: Container(
-            //height: 150.h,
             width: 360.w,
             padding: EdgeInsets.fromLTRB(12.w, 20.h, 12.w, 30.h),
             color: AppColors.matchDetailsHeaderColor.withOpacity(.1),

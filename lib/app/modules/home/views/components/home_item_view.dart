@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/src/simple/get_view.dart';
 import 'package:xoom_sports/app/routes/app_pages.dart';
 import 'package:xoom_sports/app/utilities/images.dart';
-import '../../../../utilities/colors.dart';
-import '../../../../utilities/custom_clip_path.dart';
-import '../../controllers/home_controller.dart';
+import 'package:xoom_sports/app/utilities/colors.dart';
+import 'package:xoom_sports/app/utilities/custom_clip_path.dart';
+import 'package:xoom_sports/app/modules/home/controllers/home_controller.dart';
 
 class HomeItemView extends GetView<HomeController> {
   final int firstIndex;
@@ -158,16 +157,19 @@ class HomeItemView extends GetView<HomeController> {
                           InkWell(
                             onTap: () {
                               controller.changeToSelected(firstIndex, index);
-                              print(controller.favorites.value[firstIndex]
-                              [index]);
+                              print(controller.favorites.value[firstIndex][index]);
                             },
-                            child: Obx(() => ImageIcon(
-                              AssetImage(AppImages.favorite),
-                              size: 20.sp,
-                              color: controller.favorites.value[firstIndex][index]
-                                  ? AppColors.redSelectedColor
-                                  : AppColors.bottomNavColor,
-                            ),),
+                            child: GetBuilder<HomeController>(
+                                builder: (context) {
+                                  return ImageIcon(
+                                    AssetImage(controller.favorites.value[firstIndex][index] ? AppImages.favoriteFilled : AppImages.favorite,),
+                                    size: 20.sp,
+                                    color: controller.favorites.value[firstIndex][index]
+                                        ? AppColors.redSelectedColor
+                                        : AppColors.bottomNavColor,
+                                  );
+                                }
+                            ),
                           ),
                           SizedBox(width: 12.w),
                         ],

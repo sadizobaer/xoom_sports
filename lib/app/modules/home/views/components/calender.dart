@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:table_calendar/table_calendar.dart';
-
-import '../../../../utilities/colors.dart';
-import '../../controllers/home_controller.dart';
+import 'package:xoom_sports/app/utilities/colors.dart';
+import 'package:xoom_sports/app/modules/home/controllers/home_controller.dart';
 
 class Calender extends GetView<HomeController> {
   const Calender({Key? key}) : super(key: key);

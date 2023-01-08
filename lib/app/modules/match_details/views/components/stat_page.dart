@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:xoom_sports/app/modules/match_details/views/components/stat_component.dart';
-import '../../controllers/match_details_controller.dart';
+import 'package:xoom_sports/app/modules/match_details/controllers/match_details_controller.dart';
 
 class StatPage extends GetView<MatchDetailsController> {
   const StatPage({Key? key}) : super(key: key);
